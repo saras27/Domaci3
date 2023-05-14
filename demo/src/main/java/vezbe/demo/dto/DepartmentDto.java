@@ -15,7 +15,9 @@ public class DepartmentDto {
     }
 
     public DepartmentDto(Department department) {
-
+        this.id = department.getId();
+        this.nazivDepartmana = department.getName();
+        this.nazivKompanije = department.getCompany().getName();
     }
 
     public Long getId() {
